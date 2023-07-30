@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "cc61b128-51ec-453a-a702-3c6219a7a4b9",
+		"name": "Xmas Cohort Sync Class",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24624527"
+	},
+	"item": [
+		{
+			"name": "Create New Course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Second Course\",\n    \"categoryId\": 2,\n    \"description\": \"Testing\",\n    \"courseUrl\": \"https://www.youtube.com/watch?v=8vXoMqWgbQQ\",\n    \"imageUrl\": \"https://source.unsplash.com/user/c_v_r/900x800\",\n    \"location\": \"online\",\n    \"isPremium\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://notification-service.ishchoolapi.xyz/api/courses/",
+					"protocol": "https",
+					"host": [
+						"notification-service",
+						"ishchoolapi",
+						"xyz"
+					],
+					"path": [
+						"api",
+						"courses",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search All Courses",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Second Course\",\n    \"categoryId\": 2,\n    \"description\": \"Testing\",\n    \"courseUrl\": \"https://www.youtube.com/watch?v=8vXoMqWgbQQ\",\n    \"imageUrl\": \"https://source.unsplash.com/user/c_v_r/900x800\",\n    \"location\": \"online\",\n    \"isPremium\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://notification-service.ishchoolapi.xyz/api/courses/",
+					"protocol": "https",
+					"host": [
+						"notification-service",
+						"ishchoolapi",
+						"xyz"
+					],
+					"path": [
+						"api",
+						"courses",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Courses - 2304",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Second Course\",\n    \"categoryId\": 2,\n    \"description\": \"Testing\",\n    \"courseUrl\": \"https://www.youtube.com/watch?v=8vXoMqWgbQQ\",\n    \"imageUrl\": \"https://source.unsplash.com/user/c_v_r/900x800\",\n    \"location\": \"online\",\n    \"isPremium\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://notification-service.ishchoolapi.xyz/api/courses/2304",
+					"protocol": "https",
+					"host": [
+						"notification-service",
+						"ishchoolapi",
+						"xyz"
+					],
+					"path": [
+						"api",
+						"courses",
+						"2304"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modify Course - 2305",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Xmas Course\",\n    \"categoryId\": 2,\n    \"description\": \"Testing\",\n    \"courseUrl\": \"https://www.youtube.com/watch?v=8vXoMqWgbQQ\",\n    \"imageUrl\": \"https://source.unsplash.com/user/c_v_r/900x800\",\n    \"location\": \"online\",\n    \"isPremium\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://notification-service.ishchoolapi.xyz/api/courses/2305",
+					"protocol": "https",
+					"host": [
+						"notification-service",
+						"ishchoolapi",
+						"xyz"
+					],
+					"path": [
+						"api",
+						"courses",
+						"2305"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Course - 844",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Xmas Course\",\n    \"categoryId\": 2,\n    \"description\": \"Testing\",\n    \"courseUrl\": \"https://www.youtube.com/watch?v=8vXoMqWgbQQ\",\n    \"imageUrl\": \"https://source.unsplash.com/user/c_v_r/900x800\",\n    \"location\": \"online\",\n    \"isPremium\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://notification-service.ishchoolapi.xyz/api/courses/844",
+					"protocol": "https",
+					"host": [
+						"notification-service",
+						"ishchoolapi",
+						"xyz"
+					],
+					"path": [
+						"api",
+						"courses",
+						"844"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Course usuing Global Variable",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Xmas Course\",\n    \"categoryId\": 2,\n    \"description\": \"Testing\",\n    \"courseUrl\": \"https://www.youtube.com/watch?v=8vXoMqWgbQQ\",\n    \"imageUrl\": \"https://source.unsplash.com/user/c_v_r/900x800\",\n    \"location\": \"online\",\n    \"isPremium\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}",
+					"host": [
+						"{{baseURL}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
